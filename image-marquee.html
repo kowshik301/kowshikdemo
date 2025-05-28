@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image in Marquee</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 10px 0;
+      background: #fff;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: scroll 15s linear infinite;
+    }
+
+    .marquee-content img {
+      width: 300px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image in Marquee</h1>
+  <p>
+    This is a modern CSS-based marquee effect. It scrolls images from right to left without using deprecated tags.
+  </p>
+
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Books 1">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Books 2">
+      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=800&q=80" alt="Books 3">
+      <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80" alt="Books 4">
+    </div>
+  </div>
+
+</body>
+</html>
